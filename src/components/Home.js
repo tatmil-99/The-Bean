@@ -4,9 +4,9 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      Home
+      Home component
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
