@@ -8,17 +8,22 @@ import {
 } from "react-router-dom";
 
 import Home from './components/Home';
+import styled from 'styled-components';
 
 function App() {
   return (
-    <div className="App">
+    <AppDiv>
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>
-    </div>
+    </AppDiv>
   );
 }
+
+const AppDiv = styled.div`
+ 
+`;
 
 export default App;

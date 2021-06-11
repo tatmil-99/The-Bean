@@ -1,12 +1,20 @@
+import styled from "styled-components";
 import Nav from "./Nav";
 
 const Home = () => {
   return (
-    <div>
+    <HomeDiv>
       <Nav />
       Home component
-    </div>
+    </HomeDiv>
   );
 }
+
+const HomeDiv = styled.div`
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+`;
 
 export default Home;
