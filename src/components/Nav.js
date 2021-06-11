@@ -36,6 +36,7 @@ const NavMenu = styled.nav`
     font-weight: 1000;
     font-size: 40px;
     letter-spacing: 5px;
+    color: rgba(0, 0, 0, 0.5);
   }
 `;
 
@@ -46,14 +47,18 @@ const LinkItems = styled.div`
   
   a {
     text-decoration: none;
-    opacity: 1;
-    color: rgb(0, 0, 0)
+    color: rgba(0, 0, 0, 0.5);
   }
 
   &:hover {
     text-decoration: none;
-    opacity: 0.5;
     font-weight: 750;
+    box-shadow: 0px 5px 9px -5px rgb(0 0 0 / 70%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid 1.9px #EEEDE7;
+    border-radius: 4px;
+
   }
 `;
 
