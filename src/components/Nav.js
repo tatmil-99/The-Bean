@@ -6,7 +6,8 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 const Nav = () => {
   return (
     <NavMenu>
-      <h1>The Bean</h1>
+      <h1><img src="../assets/images/bean2.png" alt="..." />The Bean</h1>
+      {/* <img src="../assets/images/bean2.png" alt="..." /> */}
       <Links>
         <LinkHome>
           <Link to="/">Home</Link>
@@ -29,7 +30,7 @@ const NavMenu = styled.nav`
   letter-spacing: 3px;
   background-color: #E7D2CC;
   width: 100vw;
-  height: 11vh;
+  height: 11.5vh;
   padding: 0;
   margin: 0;
   position: sticky;
@@ -44,6 +45,14 @@ const NavMenu = styled.nav`
     font-size: 40px;
     letter-spacing: 5px;
     color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+
+    img {
+      padding: 0;
+      margin-right: 5px;
+      
+    }
 
     @media (max-width: 400px) {
       font-size: 30px;
@@ -87,8 +96,8 @@ const LinkHome = styled.div`
 
 // STYLING FOR LINKCART CONTAINER
 const LinkCart = styled.div`
-  padding: 0px 5px;
-  margin: 0px 8px;
+  padding: 0px 15px 0px 5px;
+  margin: 0px 15px 0px 8px;
   font-weight: 700;
   
   a {

@@ -13,7 +13,13 @@ const PageNotFound = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 50vh;
+  height: 100vh;
+  background-color: #B9B7BD;
+  opacity: .3;
+
+  h1 {
+    height: 50vh;
+  }
 `;
 
 export default PgNotFnd
