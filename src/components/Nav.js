@@ -18,13 +18,12 @@ const Nav = () => {
   );
 }
 
+// STYLING FOR NAVMENU CONTAINER
 const NavMenu = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0px 15px; */
-  /* margin: 0px 15px; */
   letter-spacing: 3px;
   background-color: #E7D2CC;
   width: 100vw;
@@ -55,6 +54,7 @@ const NavMenu = styled.nav`
   }
 `;
 
+// STYLING FOR LINKHOME CONTAINER
 const LinkHome = styled.div`
   padding: 0px 5px;
   margin: 0px 8px;
@@ -68,12 +68,11 @@ const LinkHome = styled.div`
   &:hover {
     text-decoration: none;
     font-weight: 750;
-    box-shadow: 0px 5px 9px -5px rgb(0 0 0 / 70%);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: solid 1.9px #EEEDE7;
-    border-radius: 4px;
+    opacity: 0.4;
+  }
 
+  &:active {
+    opacity: 0.9;
   }
 
   @media (max-width: 400px) {
@@ -85,9 +84,9 @@ const LinkHome = styled.div`
   }
 `;
 
+// STYLING FOR LINKCART CONTAINER
 const LinkCart = styled.div`
   padding: 0px 5px;
-  /* padding-right: 15px; */
   margin: 0px 8px;
   font-weight: 700;
   
@@ -99,12 +98,11 @@ const LinkCart = styled.div`
   &:hover {
     text-decoration: none;
     font-weight: 750;
-    box-shadow: 0px 5px 9px -5px rgb(0 0 0 / 70%);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: solid 1.9px #EEEDE7;
-    border-radius: 4px;
+    opacity: 0.4;
+  }
 
+  &:active {
+    opacity: 0.9;
   }
 
   @media (max-width: 400px) {
@@ -116,6 +114,7 @@ const LinkCart = styled.div`
   }
 `;
 
+// STYLING FOR LINKS CONTAINER
 const Links = styled.div`
   display: flex;
   justify-content: flex-end;

@@ -10,11 +10,13 @@ import {
 import styled from 'styled-components';
 import Home from './components/Home';
 import Cart from './components/Cart';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <AppDiv>
       <Router>
+        <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/cart" component={Cart} />
@@ -24,8 +26,12 @@ function App() {
   );
 }
 
+// STYLING FOR APPDIV CONTAINER
 const AppDiv = styled.div`
- 
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 `;
 
 export default App;
