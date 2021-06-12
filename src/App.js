@@ -11,6 +11,7 @@ import styled from 'styled-components';
 import Home from './components/Home';
 import Cart from './components/Cart';
 import Nav from './components/Nav';
+import PgNotFnd from './components/PgNotFnd';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/cart" component={Cart} />
+          <Route path="*" component={PgNotFnd} />
         </Switch>
       </Router>
     </AppDiv>

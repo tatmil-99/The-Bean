@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Badge from '@material-ui/core';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const Nav = () => {
   return (
@@ -9,9 +11,9 @@ const Nav = () => {
         <LinkHome>
           <Link to="/">Home</Link>
         </LinkHome>
-
+        
         <LinkCart>
-          <Link to="/cart">Cart</Link>
+          <Link to="/cart"><ShoppingCartIcon /></Link>
         </LinkCart>
       </Links>
     </NavMenu>
