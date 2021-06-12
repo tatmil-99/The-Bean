@@ -67,7 +67,6 @@ const LinkHome = styled.div`
 
   &:hover {
     text-decoration: none;
-    font-weight: 750;
     opacity: 0.4;
   }
 
@@ -97,7 +96,6 @@ const LinkCart = styled.div`
 
   &:hover {
     text-decoration: none;
-    font-weight: 750;
     opacity: 0.4;
   }
 
