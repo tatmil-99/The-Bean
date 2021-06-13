@@ -82,6 +82,10 @@ const DataDiv0 = styled.div`
 
   h3 {
     margin-bottom: 0;
+
+    &:active {
+      color: rgba(0, 0, 0, .8);
+    }
   }
   
   pd {
@@ -124,6 +128,10 @@ const DataDiv1 = styled.div`
 
   h3 {
     margin-bottom: 0;
+
+    &:active {
+      color: rgba(0, 0, 0, .8);
+    }
   }
 
   p {
@@ -165,6 +173,10 @@ const DataDiv2 = styled.div`
 
   h3 {
     margin-bottom: 0;
+
+    &:active {
+      color: rgba(0, 0, 0, .8);
+    }
   }
 
   p {
@@ -205,7 +217,10 @@ const DataDiv3 = styled.div`
 
   h3 {
     margin-bottom: 0;
-    
+
+    &:active {
+      color: rgba(0, 0, 0, .8);
+    }
   }
 
   p {
