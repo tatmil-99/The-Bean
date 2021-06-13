@@ -22,11 +22,17 @@ const Home = () => {
           <p>{items[1].ingredients[0]}</p>
        </DataDiv1>
       }
-       {<DataDiv2>
+      {<DataDiv2>
           <h4>{items[2].title}</h4><br></br>
           <pd>{items[2].description}</pd>
           <p>{items[2].ingredients[0]}</p>
        </DataDiv2>
+      }
+      {<DataDiv3>
+          <h4>{items[3].title}</h4><br></br>
+          <pd>{items[3].description}</pd>
+          <p>{items[3].ingredients[0]}</p>
+       </DataDiv3>
       }
   
     </HomeDiv>
@@ -39,7 +45,7 @@ const HomeDiv = styled.div`
   /* width: 100vw; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; 
   background-color: #B9B7BD;
   opacity: .5;
@@ -55,6 +61,7 @@ const DataDiv0 = styled.div`
   align-items: center;
   flex-wrap: wrap;
   max-height: 65%;
+  min-height: 65%;
   width: 30%;
   margin: 40px;
   padding: 20px;
@@ -62,6 +69,7 @@ const DataDiv0 = styled.div`
   border: 2px solid rgba(0, 0, 0, .5);
   letter-spacing: 3px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
+  overflow: hidden;
   
   pd {
     text-indent: 25px;
@@ -81,6 +89,7 @@ const DataDiv1 = styled.div`
   align-items: center;
   flex-wrap: wrap;
   max-height: 65%;
+  min-height: 65%;
   width: 30%;
   margin: 40px;
   padding: 20px;
@@ -88,6 +97,7 @@ const DataDiv1 = styled.div`
   border: 2px solid rgba(0, 0, 0, .5);
   letter-spacing: 3px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
+  overflow: hidden;
   
   pd {
     text-indent: 25px;
@@ -107,6 +117,7 @@ const DataDiv2 = styled.div`
   align-items: center;
   flex-wrap: wrap;
   max-height: 65%;
+  min-height: 65%;
   width: 30%;
   margin: 40px;
   padding: 20px;
@@ -114,6 +125,35 @@ const DataDiv2 = styled.div`
   border: 2px solid rgba(0, 0, 0, .5);
   letter-spacing: 3px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
+  overflow: hidden;
+  
+  pd {
+    text-indent: 25px;
+  }
+
+  &:hover {
+    border: 2px solid rgba(0, 0, 0, .8);
+  }
+`;
+
+const DataDiv3 = styled.div`
+  background-color: #EEEDE7;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 65%;
+  max-height: 65%;
+  width: 30%;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, .5);
+  letter-spacing: 3px;
+  box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
+  overflow: hidden;
   
   pd {
     text-indent: 25px;

@@ -49,6 +49,7 @@ const Footer = styled.div`
   width: 100%;
   height: 100px;
   background-color: #868B8E;
+  border-top: solid 1.5px rgba(0, 0, 0, 0.1);
 `;
 
 export default App;

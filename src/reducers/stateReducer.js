@@ -20,7 +20,7 @@ const initialState = {
       "title": "Liberica",
       "description": "Among enthusiasts, Liberica coffee has a controversial and polarizing reputation for wild inconsistency. Those who’ve tried this rare variety either love it or hate it. Some coffee drinkers adore the unusual, nutty, woody flavor and sneaky backbite on the finish. Others compare the flavor to burnt garbage.",
       "ingredients": [
-        "Liberica coffee beans"
+        "Ingredients: Liberica coffee beans"
       ],
       "id": 3
     },
@@ -28,7 +28,7 @@ const initialState = {
       "title": "Arabica",
       "description": "Depending on where they’re grown, Arabica beans can offer many different tasting notes, from earthy Indonesian to floral Ethiopian. If you want to amaze your tastebuds, pick up a bag of single-origin Arabica beans!",
       "ingredients": [
-        "Arabica coffee beans"
+        "Ingredients: Arabica coffee beans"
       ],
       "id": 4
     },

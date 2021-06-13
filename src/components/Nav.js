@@ -30,13 +30,11 @@ const NavMenu = styled.nav`
   letter-spacing: 3px;
   background-color: #E7D2CC;
   width: 100vw;
-  height: 11.5vh;
+  height: 100px;
   padding: 0;
   margin: 0;
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
+  /* position: sticky;
+  top: 0; */
   border-bottom: solid 1.5px rgba(0, 0, 0, 0.1);
   z-index: 1;
 
