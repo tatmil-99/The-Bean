@@ -13,7 +13,7 @@ const CartDiv = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: #B9B7BD;
-  opacity: .3;
+  opacity: .5;
 `;
 
 export default Cart

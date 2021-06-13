@@ -4,7 +4,7 @@ const initialState = {
       "title": "Robusta",
       "description": "Many people think that Robusta coffee is harsher and more bitter. It often has a strong smell and a somewhat flat, almost burnt taste. Robusta beans also have significantly more caffeine than Arabica beans.",
       "ingredients": [
-        "Robusta coffee beans"
+        "Ingredients: Robusta coffee beans"
       ],
       "id": 1
     },
@@ -37,7 +37,6 @@ const initialState = {
 
 
 const stateReducer = (state=initialState, action) => {
-  console.log(state);
   switch (action.type) {
     case "SHOW-TITLE":
       return {...state, title: state.title};

@@ -15,7 +15,7 @@ const PageNotFound = styled.div`
   text-align: center;
   height: 100vh;
   background-color: #B9B7BD;
-  opacity: .3;
+  opacity: .5;
 
   h1 {
     height: 50vh;

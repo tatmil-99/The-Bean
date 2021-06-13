@@ -37,6 +37,7 @@ const NavMenu = styled.nav`
   top: 0;
   right: 0;
   left: 0;
+  border-bottom: solid 1.5px rgba(0, 0, 0, 0.1);
 
   h1 {
     padding: 0px 15px;
