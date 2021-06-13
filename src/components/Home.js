@@ -1,13 +1,17 @@
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
+import { addTitle } from '../actions/cardActions'
 
 
 const Home = () => {
-
+  const dispatch = useDispatch();
+  const title = useSelector((state) => state.stateReducer.items);
+  console.log(title[0].title)
 
   return (
     <HomeDiv>
-      Home component
+      {/* {title.map((data) => (<h4>{data[0].title}</h4>))} */}
+  
     </HomeDiv>
   );
 }
