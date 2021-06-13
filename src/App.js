@@ -25,7 +25,7 @@ function App() {
         </Switch>
       </Router>
       <Footer>
-
+        <h3>Made with the help of coffee &#x2764;</h3>
       </Footer>
     </AppDiv>
   );
@@ -50,6 +50,12 @@ const Footer = styled.div`
   height: 100px;
   background-color: #868B8E;
   border-top: solid 1.5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+  h3 {
+    margin-top: 35px;
+    color: rgba(0, 0, 0, 0.5);
+  }
 `;
 
 export default App;
