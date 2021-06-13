@@ -24,21 +24,31 @@ function App() {
           <Route path="*" component={PgNotFnd} />
         </Switch>
       </Router>
+      <Footer>
+
+      </Footer>
     </AppDiv>
   );
 }
 
 // STYLING FOR APPDIV CONTAINER
 const AppDiv = styled.div`
-  height: 100vh;
-  width: 100vw;
-  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex; 
   flex-direction: column;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100px; 
+
+`;
+
+const Footer = styled.div`
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #868B8E;
 `;
 
 export default App;

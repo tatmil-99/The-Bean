@@ -38,6 +38,7 @@ const NavMenu = styled.nav`
   right: 0;
   left: 0;
   border-bottom: solid 1.5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 
   h1 {
     padding: 0px 15px;

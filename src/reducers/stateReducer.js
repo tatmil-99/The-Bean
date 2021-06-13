@@ -12,7 +12,7 @@ const initialState = {
       "title": "Excelsa",
       "description": "In terms of flavor, Excelsa beans are pretty unique. They combine light roast traits like tart notes and fruity flavors with flavors that are more reminiscent of dark roasts. They’re also lighter on aroma and caffeine — while maintaining an unusual depth of flavor. You can sometimes find these unusual beans in blends because they add complexity.",
       "ingredients": [
-        "Excelsa coffee beans"
+        "Ingredients: Excelsa coffee beans"
       ],
       "id": 2
     },
