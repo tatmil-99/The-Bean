@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <HomeDiv>
       {<DataDiv>
-          <h4>{items[0].title}</h4>
+          <h4>{items[0].title}</h4><br></br>
           <pd>{items[0].description}</pd>
           <p>{items[0].ingredients[0]}</p>
        </DataDiv>
