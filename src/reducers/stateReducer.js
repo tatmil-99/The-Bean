@@ -38,6 +38,8 @@ const initialState =
 const stateReducer = (state=initialState, action) => {
   console.log(state);
   switch (action.type) {
+    case "SHOW-TITLE":
+      return {...state, title: state.title};
     default:
       return state;
   } 

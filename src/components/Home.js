@@ -1,6 +1,10 @@
 import styled from "styled-components";
+import { useDispatch, useSelector } from "react-redux";
+
 
 const Home = () => {
+
+
   return (
     <HomeDiv>
       Home component
