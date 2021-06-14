@@ -39,8 +39,8 @@ const CartDiv = styled.div`
   border-radius: 4px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
 
-  @media (max-width: 375px) {
-    width: 80%;
+  @media (max-width: 768px) {
+    min-width: 80%;
   }
 `;
 
