@@ -100,6 +100,9 @@ const DataDiv0 = styled.div`
     border: 2px solid rgba(0, 0, 0, .8);
   }
 
+  @media (max-width: 375px) {
+    width: 80%;
+  }
   
 `;
 
@@ -146,6 +149,10 @@ const DataDiv1 = styled.div`
     border: 2px solid rgba(0, 0, 0, .8);
   }
 
+  @media (max-width: 375px) {
+    width: 80%;
+  }
+
 `;
 
 const DataDiv2 = styled.div`
@@ -190,6 +197,10 @@ const DataDiv2 = styled.div`
   &:hover {
     border: 2px solid rgba(0, 0, 0, .8);
   }
+
+  @media (max-width: 375px) {
+    width: 80%;
+  }
 `;
 
 const DataDiv3 = styled.div`
@@ -233,6 +244,10 @@ const DataDiv3 = styled.div`
 
   &:hover {
     border: 2px solid rgba(0, 0, 0, .8);
+  }
+
+  @media (max-width: 375px) {
+    width: 80%;
   }
 `;
 
