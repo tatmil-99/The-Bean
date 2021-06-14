@@ -15,28 +15,27 @@ const Home = () => {
           <h4>{items[0].title}</h4><br></br>
           <pd>{items[0].description}</pd>
           <p>{items[0].ingredients[0]}</p>
-          <h3 onClick={() => dispatch({type: "ADD_BEANS", payload: items[0].title})}><AddCircleIcon /></h3>
-       </DataDiv0>
-      }
+          <h3 onClick={() => dispatch({type: "ADD_ROBUSTA", payload: items[0].title})}><AddCircleIcon /></h3>
+       </DataDiv0>       }
       {<DataDiv1>
           <h4>{items[1].title}</h4><br></br>
           <pd>{items[1].description}</pd>
           <p>{items[1].ingredients[0]}</p>
-          <h3><AddCircleIcon /></h3>
+          <h3 onClick={() => dispatch({type: "ADD_EXCELSA", payload: items[1].title})}><AddCircleIcon /></h3>
        </DataDiv1>
       }
       {<DataDiv2>
           <h4>{items[2].title}</h4><br></br>
           <pd>{items[2].description}</pd>
           <p>{items[2].ingredients[0]}</p>
-          <h3><AddCircleIcon /></h3>
+          <h3 onClick={() => dispatch({type: "ADD_LIBERICA", payload: items[2].title})}><AddCircleIcon /></h3>
        </DataDiv2>
       }
       {<DataDiv3>
           <h4>{items[3].title}</h4><br></br>
           <pd>{items[3].description}</pd>
           <p>{items[3].ingredients[0]}</p>
-          <h3><AddCircleIcon /></h3>
+          <h3 onClick={() => dispatch({type: "ADD_ARABICA", payload: items[3].title})}><AddCircleIcon /></h3>
        </DataDiv3>
       }
   
