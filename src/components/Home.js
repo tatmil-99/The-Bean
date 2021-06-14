@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
-import { addTitle } from '../actions/cardActions'
+import { addTitle, addBeans } from '../actions/cardActions'
 import { Title } from "@material-ui/icons";
 import AddIcon from '@material-ui/icons/Add';
-import AddCircleIcon from '@material-ui/icons/AddCircle';;
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const Home = () => {
           <h4>{items[0].title}</h4><br></br>
           <pd>{items[0].description}</pd>
           <p>{items[0].ingredients[0]}</p>
-          <h3><AddCircleIcon /></h3>
+          <h3 onClick={() => dispatch({type: "ADD_BEANS", payload: items[0].title})}><AddCircleIcon /></h3>
        </DataDiv0>
       }
       {<DataDiv1>
