@@ -7,13 +7,22 @@ const Cart = () => {
   const libericaBeans = useSelector(state => state.cartReducer.items3);
   const arabicaBeans = useSelector(state => state.cartReducer.items4);
 
+  const allBeans = [robustaBeans, excelsaBeans, libericaBeans, arabicaBeans];
+
   return (
     <CartContainer>
       <CartDiv>
-        <ItemDiv0>
+        {allBeans.map((beanIndex) => {
+          <ItemDiv0>
+            <h3>Item: {beanIndex[0]}</h3>
+            <h4>Qty: {beanIndex.length}</h4>
+          </ItemDiv0>
+        })}
+        
+        {/* <ItemDiv0>
           <h3>Item: {robustaBeans[0]}</h3>
           <h4>Qty: {robustaBeans.length}</h4>
-        </ItemDiv0>
+        </ItemDiv0> */}
         {/* <ItemDiv1>
           <h3>Item: {excelsaBeans[0]}</h3>
           <h4>Qty: {excelsaBeans.length}</h4>
