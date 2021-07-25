@@ -14,7 +14,7 @@ const Cart = () => {
           <h3>Item: {robustaBeans[0]}</h3>
           <h4>Qty: {robustaBeans.length}</h4>
         </ItemDiv0>
-        <ItemDiv1>
+        {/* <ItemDiv1>
           <h3>Item: {excelsaBeans[0]}</h3>
           <h4>Qty: {excelsaBeans.length}</h4>
         </ItemDiv1>
@@ -25,7 +25,7 @@ const Cart = () => {
         <ItemDiv3>
           <h3>Item: {arabicaBeans[0]}</h3>
           <h4>Qty: {arabicaBeans.length}</h4>
-        </ItemDiv3>
+        </ItemDiv3> */}
       </CartDiv>
     </CartContainer>
   );
