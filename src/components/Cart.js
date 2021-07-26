@@ -13,12 +13,16 @@ const Cart = () => {
     <CartContainer>
       <CartDiv>
         {allBeans.map((beanIndex) => {
-          <ItemDiv0>
-            <h3>Item: {beanIndex[0]}</h3>
-            <h4>Qty: {beanIndex.length}</h4>
-          </ItemDiv0>
+          if (beanIndex == robustaBeans[0]) {
+            return (
+              <ItemDiv0>
+                <h3>Item: {beanIndex}</h3>
+                <h4>Qty: {beanIndex.length}</h4>
+              </ItemDiv0>
+            )
+          }
         })}
-        
+
         {/* <ItemDiv0>
           <h3>Item: {robustaBeans[0]}</h3>
           <h4>Qty: {robustaBeans.length}</h4>
