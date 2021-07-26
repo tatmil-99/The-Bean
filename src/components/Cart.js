@@ -9,36 +9,26 @@ const Cart = () => {
 
   const allBeans = [robustaBeans, excelsaBeans, libericaBeans, arabicaBeans];
 
+  const renderBeans = (bean) => {
+    
+    if (bean == robustaBeans[0]) {
+      return (
+        <ItemDiv0>
+          <h3>Item: {bean[0]}</h3>
+          <h4>Qty: {bean.length}</h4>
+        </ItemDiv0>
+      )
+    }
+  }
+
   return (
     <CartContainer>
       <CartDiv>
-        {allBeans.map((beanIndex) => {
-          if (beanIndex == robustaBeans[0]) {
-            return (
-              <ItemDiv0>
-                <h3>Item: {beanIndex}</h3>
-                <h4>Qty: {beanIndex.length}</h4>
-              </ItemDiv0>
-            )
-          }
-        })}
+        {allBeans.map((bean) => (
+          renderBeans(bean)
+        ))}
 
-        {/* <ItemDiv0>
-          <h3>Item: {robustaBeans[0]}</h3>
-          <h4>Qty: {robustaBeans.length}</h4>
-        </ItemDiv0> */}
-        {/* <ItemDiv1>
-          <h3>Item: {excelsaBeans[0]}</h3>
-          <h4>Qty: {excelsaBeans.length}</h4>
-        </ItemDiv1>
-        <ItemDiv2>
-          <h3>Item: {libericaBeans[0]}</h3>
-          <h4>Qty: {libericaBeans.length}</h4>
-        </ItemDiv2>
-        <ItemDiv3>
-          <h3>Item: {arabicaBeans[0]}</h3>
-          <h4>Qty: {arabicaBeans.length}</h4>
-        </ItemDiv3> */}
+        
       </CartDiv>
     </CartContainer>
   );
