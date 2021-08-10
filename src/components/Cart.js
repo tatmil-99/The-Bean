@@ -24,9 +24,13 @@ const Cart = () => {
       <CartDiv>
         {allBeans.map((bean) => (
           <ItemDiv0>
-              
-            <h3>{(() => {if (robustaBeans.length > 0) {renderBeans(bean)}})}</h3>
-              
+            <h3>
+              {(() => {
+                 if (robustaBeans.length > 0) {
+                   renderBeans(bean)
+                 }
+              })}
+            </h3>
           </ItemDiv0>
         ))}
       </CartDiv>
