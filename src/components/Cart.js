@@ -10,32 +10,25 @@ const Cart = () => {
   const allBeans = [robustaBeans, excelsaBeans, libericaBeans, arabicaBeans];
 
   const renderBeans = (bean) => {
-    if (bean == allBeans[0]) {
-      let beanType = bean[0];
-      let beanQty = bean.length;
-      let beansss = `${beanType}: ${beanQty}`
+    if (bean == robustaBeans) {
+      let beanType = robustaBeans[0];
+      let beanQty = robustaBeans.length;
+      let cartItem = `${beanType}: ${beanQty}`;
         
-      // return (
-      //   <ItemDiv0>
-      //     <h3>{beanType}</h3>
-      //     <h4>{beanQty}</h4>
-      //   </ItemDiv0>
-      // )
-      return beansss;
+      return cartItem;
     }
-    
   }
 
   return (
     <CartContainer>
       <CartDiv>
         {allBeans.map((bean) => (
-          // <ItemDiv0>
-          //   <h3>Item: {renderBeans(bean)}</h3>
-          // </ItemDiv0>
-          <h3>{renderBeans(bean)}</h3>
+          <ItemDiv0>
+              
+            <h3>{(() => {if (robustaBeans.length > 0) {renderBeans(bean)}})}</h3>
+              
+          </ItemDiv0>
         ))}
-        
       </CartDiv>
     </CartContainer>
   );
