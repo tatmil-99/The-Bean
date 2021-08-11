@@ -20,7 +20,10 @@ const Cart = () => {
       if (beanQty > 0) {
         return (
           <ItemDiv0>
-            <h3>{beanType}: <RemoveCircleIcon /> {beanQty} <AddCircleIcon /></h3>
+            <h3 onClick={() => robustaBeans.pop()}>
+              {beanType}: <RemoveCircleIcon /> 
+              {beanQty} <AddCircleIcon />
+            </h3>
           </ItemDiv0>
         );
       }
