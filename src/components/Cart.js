@@ -16,7 +16,11 @@ const Cart = () => {
       let cartItem = `${beanType}: ${beanQty}`;
 
       if (beanQty > 0) {
-        return cartItem;
+        return (
+          <ItemDiv0>
+            <h3>{cartItem}</h3>
+          </ItemDiv0>
+        );
       }
     }
   }
@@ -25,16 +29,10 @@ const Cart = () => {
     <CartContainer>
       <CartDiv>
         {allBeans.map((bean) => (
-          <ItemDiv0>
-            <h3>
-              {/* {(() => {
-                 if (robustaBeans.length > 0) {
-                   renderBeans(bean)
-                 }
-              })} */}
-              {renderBeans(bean)}
-            </h3>
-          </ItemDiv0>
+          // <ItemDiv0>
+          //   <h3>{renderBeans(bean)}</h3>
+          // </ItemDiv0>
+          renderBeans(bean)
         ))}
       </CartDiv>
     </CartContainer>
