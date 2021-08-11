@@ -29,9 +29,6 @@ const Cart = () => {
     <CartContainer>
       <CartDiv>
         {allBeans.map((bean) => (
-          // <ItemDiv0>
-          //   <h3>{renderBeans(bean)}</h3>
-          // </ItemDiv0>
           renderBeans(bean)
         ))}
       </CartDiv>
