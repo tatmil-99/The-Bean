@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { useSelector } from "react-redux";
+import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 const Cart = () => {
   const robustaBeans = useSelector(state => state.cartReducer.items1);
@@ -13,12 +15,12 @@ const Cart = () => {
     if (bean[0] == robustaBeans[0]) {
       let beanType = robustaBeans[0];
       let beanQty = robustaBeans.length;
-      let cartItem = `${beanType}: ${beanQty}`;
+      // let cartItem = `${beanType}: ${beanQty}`;
 
       if (beanQty > 0) {
         return (
           <ItemDiv0>
-            <h3>{cartItem}</h3>
+            <h3>{beanType}: <RemoveCircleIcon /> {beanQty} <AddCircleIcon /></h3>
           </ItemDiv0>
         );
       }
@@ -75,6 +77,7 @@ const ItemDiv0 = styled.div`
 
   h3 {
     margin-bottom: 0;
+    
   }
 `;
 
