@@ -15,6 +15,8 @@ const cartReducer = (state=initialState, action) => {
       return {...state, items3: [...state.items3, action.payload]};
     case "ADD_ARABICA":
       return {...state, items4: [...state.items4, action.payload]};
+    case "REMOVE_ROBUSTA":
+      return {...state, items1: [...state.items1, state.items1.splice(-1)]}
     default:
       return state;
   }
