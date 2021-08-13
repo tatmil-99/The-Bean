@@ -24,8 +24,7 @@ const Cart = () => {
           <ItemDiv0>
             <h3>
               {beanType}: <RemoveCircleIcon onClick={() => 
-                dispatch({type: "REMOVE_ROBUSTA", 
-                payload: (state) => {state.items1.splice(-1)}})} /> 
+                dispatch({type: "REMOVE_ROBUSTA"})} /> 
               {beanQty} <AddCircleIcon onClick={() => 
                 dispatch({type: "ADD_ROBUSTA", 
                 payload: (state) => {state.items1.push(state.items1[0])}})} />
