@@ -14,24 +14,46 @@ const Cart = () => {
   const allBeans = [robustaBeans, excelsaBeans, libericaBeans, arabicaBeans];
 
   const renderBeans = (bean) => {
-    if (bean[0] == robustaBeans[0]) {
-      let beanType = robustaBeans[0];
-      let beanQty = robustaBeans.length;
-      // let cartItem = `${beanType}: ${beanQty}`;
+    // if (bean[0] == robustaBeans[0]) {
+    //   let beanType = robustaBeans[0];
+    //   let beanQty = robustaBeans.length;
+    //   // let cartItem = `${beanType}: ${beanQty}`;
 
-      if (beanQty > 0) {
-        return (
-          <ItemDiv0>
-            <h3>
-              {beanType}: <RemoveCircleIcon onClick={() => 
-                dispatch({type: "REMOVE_ROBUSTA"})} /> 
-              {beanQty} <AddCircleIcon onClick={() => 
-                dispatch({type: "ADD_ROBUSTA", 
-                payload: (state) => {state.items1.push(state.items1[0])}})} />
-            </h3>
-          </ItemDiv0>
-        );
-      }
+    //   if (beanQty > 0) {
+    //     return (
+    //       <ItemDiv0>
+    //         <h3>
+    //           {beanType}: <RemoveCircleIcon onClick={() => 
+    //             dispatch({type: "REMOVE_ROBUSTA"})} /> 
+    //           {beanQty} <AddCircleIcon onClick={() => 
+    //             dispatch({type: "ADD_ROBUSTA", 
+    //             payload: (state) => {state.items1.push(state.items1[0])}})} />
+    //         </h3>
+    //       </ItemDiv0>
+    //     );
+    //   }
+    // }
+    switch (true) {
+      case bean[0] == robustaBeans[0]:
+        let beanType = robustaBeans[0];
+        let beanQty = robustaBeans.length;
+
+        if (beanQty > 0) {
+          return (
+            <ItemDiv0>
+              <h3>
+                {beanType}: <RemoveCircleIcon onClick={() => 
+                  dispatch({type: "REMOVE_ROBUSTA"})} />
+                {beanQty} <AddCircleIcon onClick={() =>
+                  dispatch({type: "ADD_ROBUSTA", 
+                  payload: (state) => {state.items1.push(state.items1[0])}})} />
+              </h3>
+            </ItemDiv0>
+          );
+        } 
+        break;
+      default: 
+        break;
     }
   }
 
