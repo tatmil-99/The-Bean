@@ -21,7 +21,7 @@ const Cart = () => {
 
     //   if (beanQty > 0) {
     //     return (
-    //       <ItemDiv0>
+    //       <ItemDiv>
     //         <h3>
     //           {beanType}: <RemoveCircleIcon onClick={() => 
     //             dispatch({type: "REMOVE_ROBUSTA"})} /> 
@@ -29,18 +29,18 @@ const Cart = () => {
     //             dispatch({type: "ADD_ROBUSTA", 
     //             payload: (state) => {state.items1.push(state.items1[0])}})} />
     //         </h3>
-    //       </ItemDiv0>
+    //       </ItemDiv>
     //     );
     //   }
     // }
     switch (true) {
-      case bean[0] == robustaBeans[0]:
+      case bean == robustaBeans:
         let beanType = robustaBeans[0];
         let beanQty = robustaBeans.length;
 
         if (beanQty > 0) {
           return (
-            <ItemDiv0>
+            <ItemDiv>
               <h3>
                 {beanType}: <RemoveCircleIcon onClick={() => 
                   dispatch({type: "REMOVE_ROBUSTA"})} />
@@ -48,10 +48,28 @@ const Cart = () => {
                   dispatch({type: "ADD_ROBUSTA", 
                   payload: (state) => {state.items1.push(state.items1[0])}})} />
               </h3>
-            </ItemDiv0>
+            </ItemDiv>
           );
         } 
         break;
+      case bean == excelsaBeans:
+        let beanTypeExcelsa = excelsaBeans[0];
+        let beanQtyExcelsa = excelsaBeans.length;
+  
+        if (beanQtyExcelsa > 0) {
+          return (
+            <ItemDiv>
+              <h3>
+                {beanTypeExcelsa}: <RemoveCircleIcon onClick={() => 
+                  dispatch({type: "REMOVE_EXCELSA"})} />
+                {beanQtyExcelsa} <AddCircleIcon onClick={() =>
+                    dispatch({type: "ADD_EXCELSA", 
+                    payload: (state) => {state.items2.push(state.items2[0])}})} />
+              </h3>
+            </ItemDiv>
+          );
+        }
+        break; 
       default: 
         break;
     }
@@ -96,7 +114,7 @@ const CartDiv = styled.div`
   }
 `;
 
-const ItemDiv0 = styled.div`
+const ItemDiv = styled.div`
   width: 70%;
   height: 70%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
@@ -111,45 +129,45 @@ const ItemDiv0 = styled.div`
   }
 `;
 
-const ItemDiv1 = styled.div`
-  width: 70%;
-  height: 70%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+// const ItemDiv1 = styled.div`
+//   width: 70%;
+//   height: 70%;
+//   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
 
-  h3 {
-    margin-bottom: 0;
-  }
-`;
+//   h3 {
+//     margin-bottom: 0;
+//   }
+// `;
 
-const ItemDiv2 = styled.div`
-  width: 70%;
-  height: 70%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+// const ItemDiv2 = styled.div`
+//   width: 70%;
+//   height: 70%;
+//   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
 
-  h3 {
-    margin-bottom: 0;
-  }
-`;
+//   h3 {
+//     margin-bottom: 0;
+//   }
+// `;
 
-const ItemDiv3 = styled.div`
-  width: 70%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+// const ItemDiv3 = styled.div`
+//   width: 70%;
+//   height: 70%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
 
-  h3 {
-    margin-bottom: 0;
-  }
-`;
+//   h3 {
+//     margin-bottom: 0;
+//   }
+// `;
 
 export default Cart
