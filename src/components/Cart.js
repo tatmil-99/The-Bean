@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 
-const Cart = () => {
+function Cart() {
   const robustaBeans = useSelector(state => state.cartReducer.items1);
   const excelsaBeans = useSelector(state => state.cartReducer.items2);
   const libericaBeans = useSelector(state => state.cartReducer.items3);
