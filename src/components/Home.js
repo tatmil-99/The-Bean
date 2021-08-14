@@ -1,8 +1,5 @@
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
-import { addTitle, addBeans } from '../actions/cardActions'
-import { Title } from "@material-ui/icons";
-import AddIcon from '@material-ui/icons/Add';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 const Home = () => {
@@ -46,8 +43,6 @@ const Home = () => {
 
 // STYLING FOR HOMEDIV CONTAINER
 const HomeDiv = styled.div`
-  /* height: 100vh; */
-  /* width: 100vw; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -250,12 +245,5 @@ const DataDiv3 = styled.div`
     min-width: 80%;
   }
 `;
-
-// const IconDiv = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: flex-end;
-//   align-items: flex-end;
-// `;
 
 export default Home;

@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Badge from '@material-ui/core';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const Nav = () => {
   return (
     <NavMenu>
       <h1><img src="../assets/images/bean2.png" alt="..." />The Bean</h1>
-      {/* <img src="../assets/images/bean2.png" alt="..." /> */}
       <Links>
         <LinkHome>
           <Link to="/">Home</Link>
@@ -21,7 +19,7 @@ const Nav = () => {
   );
 }
 
-// STYLING FOR NAVMENU CONTAINER
+// STYLING
 const NavMenu = styled.nav`
   display: flex;
   flex-direction: row;
@@ -33,8 +31,6 @@ const NavMenu = styled.nav`
   height: 100px;
   padding: 0;
   margin: 0;
-  /* position: sticky;
-  top: 0; */
   border-bottom: solid 1.5px rgba(0, 0, 0, 0.1);
   z-index: 1;
 
@@ -65,7 +61,6 @@ const NavMenu = styled.nav`
   }
 `;
 
-// STYLING FOR LINKHOME CONTAINER
 const LinkHome = styled.div`
   padding: 0px 5px;
   margin: 0px 8px;
@@ -94,7 +89,6 @@ const LinkHome = styled.div`
   }
 `;
 
-// STYLING FOR LINKCART CONTAINER
 const LinkCart = styled.div`
   padding: 0px 15px 0px 5px;
   margin: 0px 15px 0px 8px;
@@ -123,7 +117,6 @@ const LinkCart = styled.div`
   }
 `;
 
-// STYLING FOR LINKS CONTAINER
 const Links = styled.div`
   display: flex;
   justify-content: flex-end;

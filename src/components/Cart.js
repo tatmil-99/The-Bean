@@ -33,7 +33,6 @@ function Cart() {
           );
         } 
         break;
-
       case bean == excelsaBeans:
         let beanTypeExcelsa = excelsaBeans[0];
         let beanQtyExcelsa = excelsaBeans.length;
@@ -52,7 +51,6 @@ function Cart() {
           );
         }
         break; 
-
       case bean == libericaBeans:
         let beanTypeLiberica = libericaBeans[0];
         let beanQtyLiberica = libericaBeans.length;
@@ -71,7 +69,6 @@ function Cart() {
           );
         }
         break;
-
       case bean == arabicaBeans:
         let beanTypeArabica = arabicaBeans[0];
         let beanQtyArabica = arabicaBeans.length;
@@ -90,7 +87,6 @@ function Cart() {
           )
         }
         break;
-
       default: 
         break;
     }
@@ -107,7 +103,7 @@ function Cart() {
   );
 }
 
-// STYLING FOR CARTDIV CONTAINER
+// STYLING 
 const CartContainer = styled.div`
   height: 100vh;
   width: 100vw;

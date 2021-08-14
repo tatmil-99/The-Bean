@@ -8,6 +8,7 @@ const PgNotFnd = () => {
   );
 }
 
+// STYLING
 const PageNotFound = styled.div`
   display: flex;
   justify-content: center;

@@ -2,8 +2,6 @@ import './App.css';
 import { 
   BrowserRouter as Router, 
   Route, 
-  Link, 
-  Redirect,
   Switch, 
 } from "react-router-dom";
 
@@ -31,7 +29,7 @@ function App() {
   );
 }
 
-// STYLING FOR APPDIV CONTAINER
+// STYLING 
 const AppDiv = styled.div`
   min-height: 100vh;
   min-width: 100vw;
