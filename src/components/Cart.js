@@ -88,12 +88,17 @@ function Cart() {
           );
         }
         break;
-      case bean == empty:
-        return (
-          <ItemDiv0>
-            <h2>Cart Empty</h2>
-          </ItemDiv0>
-        );
+      default: 
+        if (robustaBeans.length == 0 && 
+            excelsaBeans.length == 0 && 
+            libericaBeans.length == 0 && 
+            arabicaBeans.length == 0) {
+          return (
+            <ItemDiv0>
+              <h2>Cart Empty</h2>
+            </ItemDiv0>
+          );
+        }
         break;
     }
   }
