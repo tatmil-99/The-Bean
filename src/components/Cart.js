@@ -8,10 +8,11 @@ function Cart() {
   const excelsaBeans = useSelector(state => state.cartReducer.items2);
   const libericaBeans = useSelector(state => state.cartReducer.items3);
   const arabicaBeans = useSelector(state => state.cartReducer.items4);
+  const empty = useSelector(state => state.cartReducer.items5);
 
   const dispatch = useDispatch();
 
-  const allBeans = [robustaBeans, excelsaBeans, libericaBeans, arabicaBeans];
+  const allBeans = [robustaBeans, excelsaBeans, libericaBeans, arabicaBeans, empty];
 
   const renderBeans = (bean) => {
     switch (true) {
@@ -84,10 +85,15 @@ function Cart() {
                   payload: (state) => {state.items4.push(state.items4[0])}})} />
               </h3>
             </ItemDiv3>
-          )
+          );
         }
         break;
-      default: 
+      case bean == empty:
+        return (
+          <ItemDiv0>
+            <h2>Cart Empty</h2>
+          </ItemDiv0>
+        );
         break;
     }
   }
@@ -97,7 +103,8 @@ function Cart() {
       <CartDiv>
         {allBeans.map((bean) => (
           renderBeans(bean)
-        ))}
+         ))
+        }
       </CartDiv>
     </CartContainer>
   );

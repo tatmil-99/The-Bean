@@ -3,6 +3,7 @@ const initialState = {
   items2: [],
   items3: [],
   items4: [],
+  items5: [],
 }
 
 const cartReducer = (state=initialState, action) => {
