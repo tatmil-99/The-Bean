@@ -19,6 +19,10 @@ const cartReducer = (state=initialState, action) => {
       return {...state, items1: [...state.items1.slice(0, -1)]};
     case "REMOVE_EXCELSA":
       return {...state, items2: [...state.items2.slice(0, -1)]};
+    case "REMOVE_LIBERICA":
+      return {...state, items3: [...state.items3.slice(0, -1)]};
+    case "REMOVE_ARABICA":
+      return {...state, items4: [...state.items4.slice(0, -1)]};
     default:
       return state;
   }

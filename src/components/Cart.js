@@ -14,51 +14,33 @@ const Cart = () => {
   const allBeans = [robustaBeans, excelsaBeans, libericaBeans, arabicaBeans];
 
   const renderBeans = (bean) => {
-    // if (bean[0] == robustaBeans[0]) {
-    //   let beanType = robustaBeans[0];
-    //   let beanQty = robustaBeans.length;
-    //   // let cartItem = `${beanType}: ${beanQty}`;
-
-    //   if (beanQty > 0) {
-    //     return (
-    //       <ItemDiv>
-    //         <h3>
-    //           {beanType}: <RemoveCircleIcon onClick={() => 
-    //             dispatch({type: "REMOVE_ROBUSTA"})} /> 
-    //           {beanQty} <AddCircleIcon onClick={() => 
-    //             dispatch({type: "ADD_ROBUSTA", 
-    //             payload: (state) => {state.items1.push(state.items1[0])}})} />
-    //         </h3>
-    //       </ItemDiv>
-    //     );
-    //   }
-    // }
     switch (true) {
       case bean == robustaBeans:
-        let beanType = robustaBeans[0];
-        let beanQty = robustaBeans.length;
+        let beanTypeRobusta = robustaBeans[0];
+        let beanQtyRobusta = robustaBeans.length;
 
-        if (beanQty > 0) {
+        if (beanQtyRobusta > 0) {
           return (
-            <ItemDiv>
+            <ItemDiv0>
               <h3>
-                {beanType}: <RemoveCircleIcon onClick={() => 
+                {beanTypeRobusta}: <RemoveCircleIcon onClick={() => 
                   dispatch({type: "REMOVE_ROBUSTA"})} />
-                {beanQty} <AddCircleIcon onClick={() =>
+                {beanQtyRobusta} <AddCircleIcon onClick={() =>
                   dispatch({type: "ADD_ROBUSTA", 
                   payload: (state) => {state.items1.push(state.items1[0])}})} />
               </h3>
-            </ItemDiv>
+            </ItemDiv0>
           );
         } 
         break;
+
       case bean == excelsaBeans:
         let beanTypeExcelsa = excelsaBeans[0];
         let beanQtyExcelsa = excelsaBeans.length;
   
         if (beanQtyExcelsa > 0) {
           return (
-            <ItemDiv>
+            <ItemDiv1>
               <h3>
                 {beanTypeExcelsa}: <RemoveCircleIcon onClick={() => 
                   dispatch({type: "REMOVE_EXCELSA"})} />
@@ -66,10 +48,49 @@ const Cart = () => {
                     dispatch({type: "ADD_EXCELSA", 
                     payload: (state) => {state.items2.push(state.items2[0])}})} />
               </h3>
-            </ItemDiv>
+            </ItemDiv1>
           );
         }
         break; 
+
+      case bean == libericaBeans:
+        let beanTypeLiberica = libericaBeans[0];
+        let beanQtyLiberica = libericaBeans.length;
+    
+        if (beanQtyLiberica > 0) {
+          return (
+            <ItemDiv2>
+              <h3>
+                {beanTypeLiberica}: <RemoveCircleIcon onClick={() => 
+                  dispatch({type: "REMOVE_LIBERICA"})} />
+                {beanQtyLiberica} <AddCircleIcon onClick={() =>
+                  dispatch({type: "ADD_LIBERICA", 
+                  payload: (state) => {state.items3.push(state.items3[0])}})} />
+              </h3>
+            </ItemDiv2>
+          );
+        }
+        break;
+
+      case bean == arabicaBeans:
+        let beanTypeArabica = arabicaBeans[0];
+        let beanQtyArabica = arabicaBeans.length;
+
+        if (beanQtyArabica > 0) {
+          return (
+            <ItemDiv3>
+              <h3>
+                {beanTypeArabica}: <RemoveCircleIcon onClick={() => 
+                  dispatch({type: "REMOVE_ARABICA"})} />
+                {beanQtyArabica} <AddCircleIcon onClick={() => 
+                  dispatch({type: "ADD_ARABICA", 
+                  payload: (state) => {state.items4.push(state.items4[0])}})} />
+              </h3>
+            </ItemDiv3>
+          )
+        }
+        break;
+
       default: 
         break;
     }
@@ -114,7 +135,7 @@ const CartDiv = styled.div`
   }
 `;
 
-const ItemDiv = styled.div`
+const ItemDiv0 = styled.div`
   width: 70%;
   height: 70%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
@@ -129,45 +150,46 @@ const ItemDiv = styled.div`
   }
 `;
 
-// const ItemDiv1 = styled.div`
-//   width: 70%;
-//   height: 70%;
-//   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
+const ItemDiv1 = styled.div`
+  width: 70%;
+  height: 70%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-//   h3 {
-//     margin-bottom: 0;
-//   }
-// `;
+  h3 {
+    margin-bottom: 0;
+  }
+`;
 
-// const ItemDiv2 = styled.div`
-//   width: 70%;
-//   height: 70%;
-//   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
+const ItemDiv2 = styled.div`
+  width: 70%;
+  height: 70%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-//   h3 {
-//     margin-bottom: 0;
-//   }
-// `;
+  h3 {
+    margin-bottom: 0;
+  }
+`;
 
-// const ItemDiv3 = styled.div`
-//   width: 70%;
-//   height: 70%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
+const ItemDiv3 = styled.div`
+  width: 70%;
+  height: 70%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-//   h3 {
-//     margin-bottom: 0;
-//   }
-// `;
+  h3 {
+    margin-bottom: 0;
+  }
+`;
 
 export default Cart
