@@ -66,7 +66,7 @@ const DataDiv0 = styled.div`
   margin: 40px;
   padding: 20px;
   border-radius: 4px;
-  border: 2px solid rgba(0, 0, 0, .5);
+  /* border: 2px solid rgba(0, 0, 0, .5); */
   letter-spacing: 3px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
   overflow: hidden;
@@ -115,7 +115,7 @@ const DataDiv1 = styled.div`
   margin: 40px;
   padding: 20px;
   border-radius: 4px;
-  border: 2px solid rgba(0, 0, 0, .5);
+  /* border: 2px solid rgba(0, 0, 0, .5); */
   letter-spacing: 3px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
   overflow: hidden;
@@ -164,7 +164,7 @@ const DataDiv2 = styled.div`
   margin: 40px;
   padding: 20px;
   border-radius: 4px;
-  border: 2px solid rgba(0, 0, 0, .5);
+  /* border: 2px solid rgba(0, 0, 0, .5); */
   letter-spacing: 3px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
   overflow: hidden;
@@ -212,7 +212,7 @@ const DataDiv3 = styled.div`
   margin: 40px;
   padding: 20px;
   border-radius: 4px;
-  border: 2px solid rgba(0, 0, 0, .5);
+  /* border: 2px solid rgba(0, 0, 0, .5); */
   letter-spacing: 3px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
   overflow: hidden;

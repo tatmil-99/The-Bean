@@ -41,9 +41,15 @@ const HamburgerMenu = styled.div`
 `;
 
 const HamburgerLinks = styled.div`
-  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: auto;
+  background-color: #EEEDE7;
   margin-top: 32px;
-  
+  padding: 0px 15px 0px 15px;
+  border-radius: 4px;
+  box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
 `;
 
 export default Hamburger;
