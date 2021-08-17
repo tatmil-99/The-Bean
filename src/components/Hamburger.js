@@ -14,8 +14,10 @@ const Hamburger = () => {
   return (
     <HamburgerMenu>
       <h3 onClick={toggleHamburger}><MenuIcon />
-        {hamburgerOpen ? <div><Link to="/">Home</Link></div> : null}
-        {hamburgerOpen ? <div><Link to="/cart">Cart</Link></div> : null}
+        <HamburgerLinks>
+          {hamburgerOpen ? <div><Link to="/">Home</Link></div> : null}
+          {hamburgerOpen ? <div><Link to="/cart">Cart</Link></div> : null}
+        </HamburgerLinks>
       </h3>
     </HamburgerMenu>
   );
@@ -23,7 +25,7 @@ const Hamburger = () => {
 
 // STYLING
 const HamburgerMenu = styled.div`
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.1); */
   padding: 0px 30px;
   margin: 0;
   height: 100px;
@@ -37,4 +39,11 @@ const HamburgerMenu = styled.div`
     display: none;
   }
 `;
+
+const HamburgerLinks = styled.div`
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 32px;
+  
+`;
+
 export default Hamburger;
