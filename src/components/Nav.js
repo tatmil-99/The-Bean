@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import MenuIcon from '@material-ui/icons/Menu';
+import Hamburger from "./Hamburger";
 
 const Nav = () => {
+
   return (
     <NavMenu>
       <h1><img src="../assets/images/bean2.png" alt="..." />The Bean</h1>
       <Links>
-        <LinkHome>
-          <Link to="/">Home</Link>
-        </LinkHome>
-        <LinkCart>
-          <Link to="/cart"><ShoppingCartIcon /></Link>
-        </LinkCart>
-        <MenuIcon />
+          <LinkHome>
+            <Link to="/">Home</Link>
+          </LinkHome>
+          <LinkCart>
+            <Link to="/cart"><ShoppingCartIcon /></Link>
+          </LinkCart>
+          <Hamburger>
+          </Hamburger>
       </Links>
     </NavMenu>
   );
@@ -88,6 +90,10 @@ const LinkHome = styled.div`
   @media (max-width: 325px) {
   font-size: 13px;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const LinkCart = styled.div`
@@ -115,6 +121,10 @@ const LinkCart = styled.div`
 
   @media (max-width: 325px) {
     font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
