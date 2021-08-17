@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const Nav = () => {
   return (
@@ -10,10 +11,10 @@ const Nav = () => {
         <LinkHome>
           <Link to="/">Home</Link>
         </LinkHome>
-        
         <LinkCart>
           <Link to="/cart"><ShoppingCartIcon /></Link>
         </LinkCart>
+        <MenuIcon />
       </Links>
     </NavMenu>
   );
@@ -121,6 +122,10 @@ const Links = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @media (max-width: 415px) {
+    
+  }
 `;
 
 
