@@ -49,7 +49,6 @@ const HomeDiv = styled.div`
   flex-wrap: wrap; 
   background-color: #B9B7BD;
   opacity: .5;
-  
 `;
 
 const DataDiv0 = styled.div`
