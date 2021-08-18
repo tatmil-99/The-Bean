@@ -49,7 +49,7 @@ const HamburgerLinks = styled.div`
   margin-top: 32px;
   padding: 0px 15px 0px 15px;
   border-radius: 4px;
-  box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
+  box-shadow: 0px 5px 5px -4px rgb(0 0 0 / 60%);
 `;
 
 export default Hamburger;
