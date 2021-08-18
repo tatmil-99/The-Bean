@@ -93,7 +93,14 @@ const DataDiv0 = styled.div`
   @media (max-width: 768px) {
     min-width: 80%;
   }
+
+  @media (max-width: 320px) {
+    font-size: .80em;
+  }
   
+  @media (max-width: 375px) {
+    font-size: .90em;
+  }
 `;
 
 const DataDiv1 = styled.div`
@@ -137,6 +144,14 @@ const DataDiv1 = styled.div`
 
   @media (max-width: 768px) {
     min-width: 80%;
+  }
+
+  @media (max-width: 320px) {
+    font-size: .80em;
+  }
+
+  @media (max-width: 375px) {
+    font-size: .90em;
   }
 
 `;
@@ -183,6 +198,14 @@ const DataDiv2 = styled.div`
   @media (max-width: 768px) {
     min-width: 80%;
   }
+
+  @media (max-width: 320px) {
+    font-size: .80em;
+  }
+
+  @media (max-width: 375px) {
+    font-size: .90em;
+  }
 `;
 
 const DataDiv3 = styled.div`
@@ -226,6 +249,14 @@ const DataDiv3 = styled.div`
 
   @media (max-width: 768px) {
     min-width: 80%;
+  }
+
+  @media (max-width: 320px) {
+    font-size: .80em;
+  }
+
+  @media (max-width: 375px) {
+    font-size: .90em;
   }
 `;
 
