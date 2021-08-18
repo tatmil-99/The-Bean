@@ -154,7 +154,24 @@ const ItemDiv0 = styled.div`
 
   h3 {
     margin-bottom: 0;
-    
+
+    svg {
+      @media (max-width: 320px) {
+        font-size: 1.2em;
+      }
+
+      @media (max-width: 415px) {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  @media (max-width: 415px) {
+    font-size: .80em;
+  }
+
+  @media (max-width: 320px) {
+    font-size: .70em;
   }
 `;
 
@@ -169,6 +186,24 @@ const ItemDiv1 = styled.div`
 
   h3 {
     margin-bottom: 0;
+
+    svg {
+      @media (max-width: 320px) {
+        font-size: 1.2em;
+      }
+
+      @media (max-width: 415px) {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  @media (max-width: 415px) {
+    font-size: .80em;
+  }
+
+  @media (max-width: 320px) {
+    font-size: .70em;
   }
 `;
 
@@ -183,6 +218,24 @@ const ItemDiv2 = styled.div`
 
   h3 {
     margin-bottom: 0;
+
+    svg {
+      @media (max-width: 320px) {
+        font-size: 1.2em;
+      }
+
+      @media (max-width: 415px) {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  @media (max-width: 415px) {
+    font-size: .80em;
+  }
+
+  @media (max-width: 320px) {
+    font-size: .70em;
   }
 `;
 
@@ -197,6 +250,24 @@ const ItemDiv3 = styled.div`
 
   h3 {
     margin-bottom: 0;
+
+    svg {
+      @media (max-width: 320px) {
+        font-size: 1.2em;
+      }
+
+      @media (max-width: 415px) {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  @media (max-width: 415px) {
+    font-size: .80em;
+  }
+
+  @media (max-width: 320px) {
+    font-size: .70em;
   }
 `;
 
@@ -210,6 +281,16 @@ const EmptyCart = styled.div`
 
   h3 {
     margin-bottom: 0;
+  }
+
+  h2 {
+    @media (max-width: 320px) {
+      font-size: .90em;
+    }
+
+    @media (max-width: 414px) {
+      font-size: 1em;
+    }
   }
 `;
 

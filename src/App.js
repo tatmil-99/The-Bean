@@ -53,6 +53,14 @@ const Footer = styled.div`
   h3 {
     margin-top: 35px;
     color: rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 415px) {
+    font-size: .90em;
+  }
+
+    @media (max-width: 320px) {
+      font-size: .85em;
+    }
   }
 `;
 
