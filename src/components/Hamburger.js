@@ -3,6 +3,7 @@ import styled from "styled-components";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import CloseIcon from '@material-ui/icons/Close';
 
 const Hamburger = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -13,7 +14,8 @@ const Hamburger = () => {
 
   return (
     <HamburgerMenu>
-      <h3 onClick={toggleHamburger}><MenuIcon />
+      <h3 onClick={toggleHamburger}>
+        {hamburgerOpen ? <CloseIcon /> : <MenuIcon />}
         <HamburgerLinks>
           {hamburgerOpen ? <div><Link to="/">Home</Link></div> : null}
           {hamburgerOpen ? <div><Link to="/cart">Cart</Link></div> : null}
