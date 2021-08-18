@@ -61,6 +61,23 @@ const HamburgerLinks = styled.div`
   padding: 0px 15px 0px 15px;
   border-radius: 4px;
   box-shadow: 0px 5px 5px -4px rgb(0 0 0 / 60%);
+  font-size: 20px;
+
+  a {
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  div {
+    margin: 5px 0px 5px 0px;
+    padding: 0px 3px 0px 0px;
+  }
 `;
 
 

@@ -94,9 +94,9 @@ function Cart() {
             libericaBeans.length == 0 && 
             arabicaBeans.length == 0) {
           return (
-            <ItemDiv0>
+            <EmptyCart>
               <h2>Cart Empty</h2>
-            </ItemDiv0>
+            </EmptyCart>
           );
         }
         break;
@@ -133,7 +133,7 @@ const CartDiv = styled.div`
   justify-content: flex-start;
   align-items: center;
   min-height: 65%;
-  min-width: 30%;
+  min-width: 40%;
   background-color: #EEEDE7;
   border-radius: 4px;
   box-shadow: 0px 12px 16px -5px rgb(0 0 0 / 80%);
@@ -190,6 +190,19 @@ const ItemDiv3 = styled.div`
   width: 70%;
   height: 70%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    margin-bottom: 0;
+  }
+`;
+
+const EmptyCart = styled.div`
+  width: 70%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
