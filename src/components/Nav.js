@@ -7,7 +7,7 @@ const Nav = () => {
 
   return (
     <NavMenu>
-      <h1><img src="../assets/images/bean2.png" alt="..." />The Bean</h1>
+      <h1><img src="public/assets/images/bean2.png" alt="..." />The Bean</h1>
       <Links>
           <LinkHome>
             <Link to="/">Home</Link>
