@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/The-Bean/static/css/main.5622c6e9.chunk.css",
+    "main.js": "/The-Bean/static/js/main.50cca312.chunk.js",
+    "main.js.map": "/The-Bean/static/js/main.50cca312.chunk.js.map",
+    "runtime-main.js": "/The-Bean/static/js/runtime-main.a3d14bad.js",
+    "runtime-main.js.map": "/The-Bean/static/js/runtime-main.a3d14bad.js.map",
+    "static/js/2.8d5211c4.chunk.js": "/The-Bean/static/js/2.8d5211c4.chunk.js",
+    "static/js/2.8d5211c4.chunk.js.map": "/The-Bean/static/js/2.8d5211c4.chunk.js.map",
+    "index.html": "/The-Bean/index.html",
+    "static/css/main.5622c6e9.chunk.css.map": "/The-Bean/static/css/main.5622c6e9.chunk.css.map",
+    "static/js/2.8d5211c4.chunk.js.LICENSE.txt": "/The-Bean/static/js/2.8d5211c4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3d14bad.js",
+    "static/js/2.8d5211c4.chunk.js",
+    "static/css/main.5622c6e9.chunk.css",
+    "static/js/main.50cca312.chunk.js"
+  ]
+}
