@@ -5,6 +5,7 @@ I wanted to build a mock e-commerce site that sold coffee beans, because a.) I l
 ### Tools and Technology Used
 
 - CSS, Styled Components
+- Material UI
 - JavaScript ES6
 - React/Redux
 - Git, GitHub
