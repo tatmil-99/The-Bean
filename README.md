@@ -24,3 +24,7 @@ I wanted to build a mock e-commerce site that sold coffee beans, because a.) I l
 - FreeCodeCamp
 - Medium
 - Stack Overflow
+
+| Name          | Email              | Twitter  |
+| ------------- | ------------------ | -------- |
+| Tatien Miller | tatmil99@gmail.com | @TatienM |
