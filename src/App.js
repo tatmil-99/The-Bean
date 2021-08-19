@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/cart" component={Cart} />
-          {/* <Route path="*" component={PgNotFnd} /> */}
+          <Route path="*" component={PgNotFnd} />
         </Switch>
       </Router>
       <Footer>
