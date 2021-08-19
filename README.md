@@ -4,7 +4,7 @@ I wanted to build a mock e-commerce site that sold coffee beans, because a.) I l
 
 ### Images
 
-<img src="https://github.com/tatmil-99/The-Bean/blob/main/Screen%20Shot%202021-08-19%20at%2012.07.54%20AM.png" height="300" width="500" >
+<img src="public/assets/images/" height="300" width="500" >
 
 ### How to View It Live
 
