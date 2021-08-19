@@ -4,9 +4,11 @@ I wanted to build a mock e-commerce site that sold coffee beans, because a.) I l
 
 ### Images
 
-<img src="/public/assets/images/Screen Shot 2021-08-19 at 12.07.54 AM.png" height="500" width="300" >
+<img src="/public/assets/images/Screen Shot 2021-08-19 at 12.07.54 AM.png" height="500" width="275" >
 
-<img src="/public/assets/images/Screen Shot 2021-08-19 at 12.08.50 AM.png" height="500" width="300" >
+<img src="/public/assets/images/Screen Shot 2021-08-19 at 12.08.50 AM.png" height="500" width="275" >
+
+<img src="/public/assets/images/Screen Shot 2021-08-19 at 12.09.26 AM.png" height="500" width="275" >
 
 ### How to View It Live
 
