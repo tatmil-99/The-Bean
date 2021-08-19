@@ -6,6 +6,8 @@ I wanted to build a mock e-commerce site that sold coffee beans, because a.) I l
 
 <img src="/public/assets/images/Screen Shot 2021-08-19 at 12.07.54 AM.png" height="500" width="300" >
 
+<img src="/public/assets/images/Screen Shot 2021-08-19 at 12.08.50 AM.png" height="500" width="300" >
+
 ### How to View It Live
 
 In the future I intend to host my app on the web, but in the meantime you can view it by making a copy of the repository. Make sure you have NPM and NPX installed , 'cd' into your local app and run 'npm start'. This should allow you to view my app via the web.
