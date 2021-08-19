@@ -4,7 +4,7 @@ I wanted to build a mock e-commerce site that sold coffee beans, because a.) I l
 
 ### Images
 
-<img src="public/assets/images/" height="300" width="500" >
+<img src="/public/assets/images/Screen Shot 2021-08-19 at 12.07.54 AM.png" height="300" width="500" >
 
 ### How to View It Live
 
