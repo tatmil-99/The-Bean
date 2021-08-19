@@ -72,6 +72,10 @@ const HamburgerLinks = styled.div`
     &:active {
       opacity: 0.7;
     }
+
+    @media (max-width: 320px) {
+      font-size: .90em;
+    }
   }
 
   div {
