@@ -28,6 +28,7 @@ In the future I intend to host my app on the web, but in the meantime you can vi
 - Toggle between pages
 - Add or remove the quantity of items from Redux state
 - Mobile responsiveness
+- 404 Page
 
 ### Acknowledgements
 
