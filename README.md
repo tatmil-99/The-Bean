@@ -6,9 +6,9 @@ I wanted to build a mock e-commerce site that sold coffee beans, because a.) I l
 
 <img src="/public/assets/images/Screen Shot 2021-08-19 at 11.24.29 PM.png" height="500" width="275" >
 
-<img src="/public/assets/images/Screen Shot 2021-08-19 at 11.24.59 AM.png" height="500" width="275" >
+<img src="/public/assets/images/Screen Shot 2021-08-19 at 11.24.59 PM.png" height="500" width="275" >
 
-<img src="/public/assets/images/Screen Shot 2021-08-19 at 11.25.54 AM.png" height="500" width="275" >
+<img src="/public/assets/images/Screen Shot 2021-08-19 at 11.25.54 PM.png" height="500" width="275" >
 
 ### How to View It Live
 
