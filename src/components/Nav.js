@@ -29,13 +29,11 @@ const NavMenu = styled.nav`
   align-items: center;
   justify-content: space-between;
   letter-spacing: 3px;
-  /* background-color: #E7D2CC; */
   background-color: #868B8E;
   width: 100vw;
   height: 100px;
   padding: 0;
   margin: 0;
-  /* border-bottom: solid 1.5px rgba(0, 0, 0, 0.1); */
   z-index: 1;
 
   h1 {
