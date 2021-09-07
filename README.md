@@ -1,6 +1,17 @@
 # Coffee E-commerce Site Created With React and Redux
 
-I wanted to build a mock e-commerce site that sold coffee beans, because a.) I love coffee, and b.) I wanted to put my JavaScript and React/Redux skills to the test. I also thought it would be really cool to see how one of these sites worked considering they make up a large portion of the web. I hope you enjoy looking at my web app.
+### How I Worked On This Project
+
+My goal was to simulate a professional environment.
+
+- I built this app with inspiration from basic e-commerce site styles
+- I drew out file structure for React components
+- I prototyped the app before building it with code
+- I used Git to document the progress of my project
+
+### Why I Built This Project
+
+I wanted to build a mock e-commerce site that sold coffee beans, because a.) I love coffee, and b.) I wanted to put my JavaScript and React/Redux skills to the test. I also thought it would be really cool to see how one of these sites worked considering they make up a large portion of the web. Additionally, I wanted to practice data management using Redux, especially as more and more backend functionality moves to the browser.
 
 ### Images
 
@@ -9,10 +20,6 @@ I wanted to build a mock e-commerce site that sold coffee beans, because a.) I l
 <img src="/public/assets/images/Screen Shot 2021-08-19 at 11.24.59 PM.png" height="500" width="275" >
 
 <img src="/public/assets/images/Screen Shot 2021-08-19 at 11.25.54 PM.png" height="500" width="275" >
-
-### How to View It Live
-
-In the future I intend to host my app on the web, but in the meantime you can view it by making a copy of the repository. Make sure you have NPM and NPX installed , 'cd' into your local app and run 'npm start'. This should allow you to view my app via the web.
 
 ### Tools and Technology Used
 
@@ -37,6 +44,11 @@ In the future I intend to host my app on the web, but in the meantime you can vi
 - FreeCodeCamp
 - Medium
 - Stack Overflow
+
+### Available Scripts
+
+In the project directory, you can run:
+`npm start`
 
 | Name          | Email              | Twitter  |
 | ------------- | ------------------ | -------- |

@@ -29,7 +29,10 @@ const NavMenu = styled.nav`
   align-items: center;
   justify-content: space-between;
   letter-spacing: 3px;
-  background-color: #868B8E;
+  /* background-color: #868B8E; */
+  background-color: #B9B7BD;
+  opacity: .5;
+  border-bottom: 2px solid rgba(0, 0, 0, .6);
   width: 100vw;
   height: 100px;
   padding: 0;
@@ -42,7 +45,8 @@ const NavMenu = styled.nav`
     font-weight: 1000;
     font-size: 40px;
     letter-spacing: 5px;
-    color: rgba(0, 0, 0, 0.5);
+    /* color: rgba(0, 0, 0, 0.5); */
+    color: rgba(0, 0, 0, 1);
     display: flex;
     align-items: center;
 
